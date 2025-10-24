@@ -28,16 +28,30 @@ This toolkit includes:
 ### 🚀 How to Use
 
 1.  **Clone the repository (or download the script):**
-    ```powershell
+    ```PowerShell
     git clone [https://github.com/0-xeno-0/PowerShell-Toolkit.git](https://github.com/0-xeno-0/PowerShell-Toolkit.git)
     cd PowerShell-Toolkit
     ```
 2.  **Make the script executable (one time only):**
-    ```powershell
-    chmod +x toolkit.ps1
+    ```PowerShell
+    Unblock-File -Path .\toolkit.ps1
     ```
 3.  **Run the script:**
-    ```powershell
+    ```PowerShell
     .\toolkit.ps1
     ```
-    *Note: Some features (like "User Creator" and "Service Manager") require `sudo` privileges to run. Launch the script with `sudo ./toolkit.sh` to use them.*
+    *Note: Some features (like "User Creator" and "Service Manager") require privileges to run. Launch the script with privileged access to use them.*
+
+### ⚠️ Note on Execution Policy
+If you still get an error in step 3 about scripts being disabled, your system's Execution Policy is likely set to Restricted.
+
+1. **To check your policy:**
+
+```PowerShell
+Get-ExecutionPolicy
+```
+2. **To allow scripts for your current session only (a safe option): Run this command, then try step 3 again.**
+
+```PowerShell
+Set-ExecutionPolicy RemoteSigned -Scope Process
+```
