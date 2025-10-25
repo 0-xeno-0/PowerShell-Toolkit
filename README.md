@@ -72,3 +72,8 @@ Get-ExecutionPolicy
 ```PowerShell
 Set-ExecutionPolicy RemoteSigned -Scope Process
 ```
+3. **Important: Before running, you may need to install the required third-party libraries:**
+
+```PowerShell
+pip install colorama requests beautifulsoup4 psutil
+```
