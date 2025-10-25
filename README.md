@@ -1,7 +1,7 @@
 # PowerShell-Toolkit: A Multi-Tool Utility Script
 
 This is an interactive, menu-driven PowerShell script that consolidates 13+ common IT support and system administration tasks into a single, user-friendly utility.
-
+This powershell script is also available in the form of a stand alone python script for windows execution.
 This project was built with a focus on professional development practices, including robust error handling, input validation, dependency checking, and a clean, color-coded user interface.
 
 ---
@@ -25,7 +25,7 @@ This toolkit includes:
 
 ---
 
-### 🚀 How to Use
+### 🚀 How to Use in PowerShell
 
 1.  **Clone the repository (or download the script):**
     ```PowerShell
@@ -40,6 +40,23 @@ This toolkit includes:
     ```PowerShell
     .\toolkit.ps1
     ```
+
+### 🚀 How to Use in Python IDE for CMD or PowerShell
+
+1.  **Clone the repository (or download the script):**
+    ```PowerShell
+    git clone [https://github.com/0-xeno-0/PowerShell-Toolkit.git](https://github.com/0-xeno-0/PowerShell-Toolkit.git)
+    cd PowerShell-Toolkit
+    ```
+2.  **Make the script executable (one time only):**
+    ```PowerShell
+    Unblock-File -Path .\toolkit.py
+    ```
+3.  **Run the script:**
+    ```PowerShell
+    python3 toolkit.py
+    ```
+    
     *Note: Some features (like "User Creator" and "Service Manager") require privileges to run. Launch the script with privileged access to use them.*
 
 ### ⚠️ Note on Execution Policy
